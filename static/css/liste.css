@@ -1,0 +1,57 @@
+#button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 30px;
+}
+
+#content2 {
+    padding-top: 3rem;
+}
+
+#submit {
+    display: inline-block;
+    border-radius: 20px;
+    background-color: #3EA6FF;
+    box-shadow: 0px 25px 80px rgb(0 0 0 / 50%);
+    border: 2px #3e6bff;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    transition: all ,0.5s;
+}
+
+
+#submit:hover {
+    box-shadow: 0px 25px 80px rgb(0 0 0 / 70%);
+}
+
+#submit span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+#submit span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+#submit:hover span {
+    padding-right: 25px;
+}
+
+#submit:hover span:after {
+    opacity: 1;
+    right: 0;
+}

@@ -1,0 +1,21 @@
+#fiche {
+    padding-top: 5rem;
+    width: 400px;
+    margin: auto;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+#content2 {
+    padding-top: 5rem;
+}
+
+#fiche>tbody>tr {
+    height: 50px;
+    padding: 10px;
+}
+
+
+#fiche>tbody>tr>td {
+    font-weight: 600;
+}

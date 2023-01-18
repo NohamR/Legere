@@ -1,0 +1,27 @@
+{% extends 'template.html' %}
+
+{% block title %}
+Fiche de personnage
+{% endblock %}
+
+{% block head %}
+<link href="{{ url_for('static', filename='css/liste.css') }}" rel="stylesheet" />
+{% endblock %}
+
+{% block content %}
+<div id="content2">
+  <form action="{{ url_for('ficheDepuisListe')}}" method="post" id="formListePerso" class="changingfontsize">
+    {% for perso in liste %}
+    <div id="button"><button type="submit" id="submit" name='nom' value='{{ perso["nom"] }}'>
+        Utilisateur : {{ perso["nom"] }}
+        <br><br>
+        Titre : {{ perso["titre"] }}
+      </button>
+    </div>
+
+    {% endfor %}
+  </form>
+  </ul>
+</div>
+
+{% endblock %}
