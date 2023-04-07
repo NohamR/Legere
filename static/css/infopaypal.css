@@ -17,6 +17,7 @@
 }
 
 #fiche>tbody>tr>td {
+    font-size: 1.5rem;
     margin: 50px;
     padding: 20px;
     font-weight: 600;

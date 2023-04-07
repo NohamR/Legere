@@ -4,18 +4,31 @@
 Informations récupérées de PayPal
 {% endblock %}
 
-{% block content %}
-<table id="fiche">
-    <tr>
-        <td>Email :</td>
-        <td>
-            <p>{{ account["email"] }}</p>
-        </td>
-    </tr>
+{% block head %}
+<link href="{{ url_for('static', filename='css/infopaypal.css') }}" rel="stylesheet" />
+{% endblock %}
 
-    <tr>
-        <td>Password :</td>
-        <td>{{ account["password"] }}</td>
-    </tr>
-</table>
+{% block content %}
+<div id='content2'>
+    <table id="fiche" class="changingfontsize">
+        <tr>
+            <td>Email :</td>
+            <td>
+                <p>{{ account["email"] }}</p>
+            </td>
+        </tr>
+        <tr>
+            <td>Password :</td>
+            <td>{{ account["password"] }}</td>
+        </tr>
+    </table>
+    <div>
+        <h1>Bonjour, Nous sommes là pour vous informer de l’erreur monumentale que comment des milliers de personnes de
+            ce monde. Le fait de donner vos informations personnelles à des inconnus ne facilite pas votre sécurité.
+            <br>
+            La prochaine fois soyer plus malin que 75 % des gens de cette misérable planète… <br>
+            (Rassurez-vous, une rançon de 1 000 000 $ / £ / € est disponible pour récupérer votre pleine sécurité)
+        </h1>
+    </div>
+</div>
 {% endblock %}

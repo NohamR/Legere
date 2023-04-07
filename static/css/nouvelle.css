@@ -2,6 +2,11 @@ label {
     font-weight: 600;
 }
 
+#formNouvelleHistoire,
+#formListeHist {
+    padding-top: 3rem;
+}
+
 #nouvelle {
     width: 400px;
     margin: auto;
@@ -18,23 +23,7 @@ label {
     padding: 10px;
 }
 
-
-/* #formListePerso>button {
-    display: block;
-    width: 100%;
-    height: 50px;
-    margin: 5px;
-    background-color: rgba(0, 0, 0, 0.4);
-    border: solid 1px black;
-} */
-
-#formNouveauPerso,
-#formListePerso {
-    padding-top: 5rem;
-    /* width: 300px; */
-}
-
-
+/* bouton envoyer */
 #button {
     display: flex;
     align-items: center;

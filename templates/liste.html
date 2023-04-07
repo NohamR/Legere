@@ -9,19 +9,31 @@ Fiche de personnage
 {% endblock %}
 
 {% block content %}
+{% if liste == [] %}
+<div id="content1">
+  <h1>Aucune histoire disponible...</h1>
+  <div class="contentchild">
+    <div class="clique">
+      <a href="/nouvelle" class="link">
+        <img src="../static/img/main/plus.png" alt="plus">
+        <h2>Ajoute ton histoire !</h2>
+      </a>
+    </div>
+  </div>
+</div>
+{% else %}
 <div id="content2">
-  <form action="{{ url_for('ficheDepuisListe')}}" method="post" id="formListePerso" class="changingfontsize">
-    {% for perso in liste %}
-    <div id="button"><button type="submit" id="submit" name='nom' value='{{ perso["nom"] }}'>
-        Utilisateur : {{ perso["nom"] }}
+  <form action="{{ url_for('ficheDepuisListe')}}" method="post" id="formListeHist" class="changingfontsize">
+    {% for hist in liste %}
+    <div id="button"><button type="submit" id="submit" name='nom' value='{{ hist["nom"] }}'>
+        Utilisateur : {{ hist["nom"] }}
         <br><br>
-        Titre : {{ perso["titre"] }}
+        Titre : {{ hist["titre"] }}
       </button>
     </div>
-
     {% endfor %}
   </form>
   </ul>
 </div>
-
+{% endif %}
 {% endblock %}

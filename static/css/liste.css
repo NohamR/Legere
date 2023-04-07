@@ -1,13 +1,14 @@
+#content2 {
+    padding-top: 3rem;
+}
+
+/* lorsqu'il y a une histoire */
 #button {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     margin: 30px;
-}
-
-#content2 {
-    padding-top: 3rem;
 }
 
 #submit {
@@ -23,9 +24,8 @@
     transition: all 0.5s;
     cursor: pointer;
     margin: 5px;
-    transition: all ,0.5s;
+    transition: all, 0.5s;
 }
-
 
 #submit:hover {
     box-shadow: 0px 25px 80px rgb(0 0 0 / 70%);
@@ -54,4 +54,43 @@
 #submit:hover span:after {
     opacity: 1;
     right: 0;
+}
+
+
+/* lorsque aucune histoire */
+.contentchild {
+    margin: 50px;
+}
+
+.clique {
+    display: flex;
+    background-color: #0000ff94;
+    padding: 20px;
+    padding-bottom: 0px;
+    border-radius: 30px;
+    box-shadow: 0px 25px 80px rgb(0 0 0 / 50%);
+    width: auto;
+    height: auto;
+    max-width: 700;
+    transition: all, 0.5s;
+}
+
+.clique:hover {
+    box-shadow: 0px 25px 80px rgba(0, 0, 0, 0.60);
+}
+
+.clique>a>img {
+    height: 50px;
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+.clique>a>h2 {
+    text-align: center;
+}
+
+#content1 {
+    padding-top: 3rem;
 }

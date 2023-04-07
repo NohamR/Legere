@@ -9,23 +9,20 @@ Publication
 {% endblock %}
 
 {% block content %}
-<form action="{{ url_for('ajouter')}}" method="post" id="formNouveauPerso">
+<form action="{{ url_for('ajouter')}}" method="post" id="formNouvelleHistoire">
   <table id="nouvelle" class="changingfontsize">
     <tr>
       <td><label for="nom">Nom d'utilisateur :</label></td>
-      <td><input type="text" name="nom" required="required"/></td>
+      <td><input type="text" name="nom" required="required" /></td>
     </tr>
-
     <tr>
       <td><label for="anonyme">Anonyme :</label></td>
       <td><input type="checkbox" name="anonyme"></td>
     </tr>
-
     <tr>
       <td><label for="titre">Titre :</label></td>
-      <td><input type="text" name="titre" required="required"/></td>
+      <td><input type="text" name="titre" required="required" /></td>
     </tr>
-
     <tr>
       <td><label for="nom">Genre :</label></td>
       <td>
@@ -36,25 +33,21 @@ Publication
         </select>
       <td>
     </tr>
-
     <tr>
       <td><label for="histoire">Votre histoire :</label></td>
       <td><textarea name="histoire" style="max-width: 200px;" required="required"></textarea></td>
     </tr>
-
     <tr>
       <td><label for="resume">Rapide résumé :</label></td>
-      <td><input type="text" name="resume" required="required"/></td>
+      <td><input type="text" name="resume" required="required" /></td>
     </tr>
-
     <tr>
       <td><label for="note_personnelle">Note personnelle :</label></td>
-      <td><input type="text" name="note_personnelle" required="required"/></td>
+      <td><input type="text" name="note_personnelle" required="required" /></td>
     </tr>
   </table>
   <div id="button">
     <button type="submit" id="submit"><span>Envoyer </span></button>
   </div>
 </form>
-
 {% endblock %}
